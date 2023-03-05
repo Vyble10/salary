@@ -1,0 +1,9 @@
+package test;
+
+public class demo {
+	public static void main(String[]args) {
+		Salary s = new Salary();
+		System.out.println(s.setBasicSalary());
+		
+	}
+}

@@ -1,0 +1,23 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Order;
+import org.junit.jupiter.api.Test;
+
+class SalaryTest {
+	Salary test = new Salary(30000);
+	@Order(1)
+	@Test
+	public void testCalcHRA() {
+		assertEquals(3000,test.calcHRA());
+	}
+	@Order(2)
+	@Test
+	public void testCalcDA() {
+		assertEquals(21900,test.calcDA());
+	}
+	@Order(3)
+	@Test
+	public void testCalcGS() {
+		assertEquals(54900,test.calcGS());
+	}
+}
