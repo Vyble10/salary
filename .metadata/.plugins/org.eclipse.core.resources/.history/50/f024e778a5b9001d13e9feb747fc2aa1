@@ -1,8 +1,0 @@
-
-public class Demo {
-	public static void main(String[]args) {
-		Salary s = new Salary(30000);
-		System.out.println(s.calcHRA());
-	}
-
-}
